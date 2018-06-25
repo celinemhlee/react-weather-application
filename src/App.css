@@ -1,12 +1,26 @@
 
+
+@import url('https://fonts.googleapis.com/css?family=Lato:700|Muli:700,800');
+
 /* Mobile */
 
-body {
+
+html {
   background-color: #f9f9f9;
 }
 
+body {
+  min-height: 93.5vh;
+  margin: 10px;
+  padding-bottom: 20px;
+  background-color: #fff;
+  border: 1px solid #fff;
+  border-radius: 20px;
+  box-shadow: -1px -0px 20px #d1d1d1;
+}
+
 .title-wrapper {
-  width: 80%;
+  max-width: 90%;
   margin-left: 3%;
 }
 
@@ -16,72 +30,142 @@ body {
 }
 
 form {
-  width: 100%;
+  max-width: 100%;
 }
 
 input {
-  width: 80%;
+  min-width: 80%;
   margin: 0 0 10px 7%;
   padding: 10px;
-  color: #727272;
+  color: gray;
   background-color: #f9f9f9;
   font-size: 1.0em;
   font-family: "Lato";
+  font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 1px;
   border: 1px solid #eee;
   border-radius: 10px;
-  box-shadow: 2px 2px 2px #eee;
+  box-shadow: 2px 2px 2px #d1d1d1;
 }
 
 button {
-  margin: 10px 0 0 7%;
+  display: block;
+  min-width: 35%;
+  margin: 10px 0 0 7.5%;
   padding: 5px 10px;
-  font-size: 1.0em;
-  font-family: "Muli";
-  background-color: #d1d1d1;
-  letter-spacing: 2px;
   color: #fff;
+  font-family: "Muli";
+  font-size: 1.0em;
+  letter-spacing: 2px;
+  font-weight: 700;
   text-transform: uppercase;
   border: none;
+  text-align: center;
+  background-color: #5192fd;
+  box-shadow: 1px 1px 1px #d1d1d1;
 }
 
 .paragraph-wrapper {
-  width: 85%;
+  max-width: 85%;
   margin: 0 auto;
-  padding: 30px 0;
-  border-top: 1px solid #eee;
-  margin-top: 50px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: #fff;
+  box-shadow: 2px 2px 10px #d1d1d1;
 }
 
-.paragraph-wrapper p {
+.paragraph-wrapper p,
+#paragraph-top-p,
+#paragraph-bottom-p {
   font-family: "Muli";
-  color: #727272;
-  font-size: 1.2em;
+  color: #5192fd;
+  font-size: 1.1em;
   margin: 0;
   line-height: 35px;
   text-transform: uppercase;
+  padding-left: 5%;
+  text-shadow: 1px 1px 1px #eee;
+  font-weight: 800;
 }
 
-span {
-  font-family: "Muli";
+#paragraph-top-p {
+  padding-top: 20px;
+}
+
+#paragraph-bottom-p {
+  padding-bottom: 20px;
+}
+
+.copyright p {
+  font-family: "Lato";
+  font-weight: 700;
   color: #d1d1d1;
   font-size: 0.8em;
   margin: 0;
   line-height: 35px;
   text-transform: uppercase;
+  text-align: center;
 }
 
-@media (min-width: 415px)  {
 
-  .title-wrapper {
-    width: 70%;
-    margin-left: 4%;
+@media (min-width: 320px)  {
+
+  .copyright p {
+    font-size: 0.5em;
   }
 
-  .paragraph-wrapper p {
-    font-size: 2.0em;
-    line-height: 42px;
+
+}
+
+
+@media (min-width: 650px)  {
+
+  body {
+    margin: 1%;
+    padding-bottom: 20px;
+    max-height: 93vh;
+    display: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+  form {
+    max-width: 50%;
+    margin: 0 auto;
+  }
+
+  .title-wrapper {
+    max-width: 50%;
+    margin: 0 auto;
+  }
+
+  .paragraph-wrapper {
+    max-width: 42%;
+  }
+
+}
+
+@media (min-width: 1030px)  {
+
+  body {
+    margin: 1%;
+    padding-bottom: 20px;
+    height: 93vh;
+  }
+
+  form {
+    max-width: 35%;
+    margin: 0 auto;
+  }
+
+  .title-wrapper {
+    max-width: 35%;
+    margin: 0 auto;
+  }
+
+  .paragraph-wrapper {
+    max-width: 30%;
   }
 
 }
